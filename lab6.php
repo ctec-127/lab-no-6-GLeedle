@@ -63,9 +63,10 @@
 
         ?>
         <!-- Form starts here -->
-        <h1 class="display-3">Temperature Converter
-            <p class="h3">CTEC 127 - PHP with SQL 1</p>
-        </h1>
+        <div class="h3">
+            <h1 class="display-3">Temperature Converter</h1>
+            CTEC 127 - PHP with SQL 1
+        </div>
         <form method="POST" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>">
             <div class="group">
                 <label for="temp">Temperature From:</label>
@@ -81,8 +82,8 @@
                     <option value="kelvin" <?php if ($originalUnit == "kelvin") echo ' selected="kelvin"'; ?>>Kelvin</option>
                 </select>
             </div>
-            <label for="conversionunit">Temperature to:</label>
-            <select class="form-control" name="conversionunit">
+            <label for="conversiontemp">Temperature to:</label>
+            <select class="form-control" name="conversionunit" id="conversiontemp">
                 <option value="--Select--" <?php if ($conversionUnit == "--Select--") echo ' selected="selected"'; ?>>--Select New Temperature Range --</option>
                 <option value="celsius" <?php if ($conversionUnit == "celsius") echo ' selected="celsius"'; ?>>Celsius</option>
                 <option value="fahrenheit" <?php if ($conversionUnit == "fahrenheit") echo ' selected="fahrenheit"'; ?>>Fahrenheit</option>
