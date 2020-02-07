@@ -12,14 +12,8 @@
 <body>
 
     <?php
-    // to make sure the variables are declared right away to avoid error on stick select form
-    // if origionalunit is not set
     $originalUnit = ""; // set $origionalUnit to empty string
-
-    // if conversionunit is not set
     $conversionUnit = ""; // set $conversionUnit to empy string
-
-    // if $convertedTemp is empty
     $convertedTemp = ""; // set $convertedTemp to empty string
 
     // function to calculate converted temperature
