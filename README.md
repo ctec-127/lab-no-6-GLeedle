@@ -10,7 +10,6 @@ This repository contains the following files:
 - **css** - A folder with a style.css file.
 - **lab6.php** - The PHP script that you will be working on
 - **.gitignore** A file that is used to tell git to ignore certain types of files.
-
 ## Steps to Follow
 
 1. By now you have already cloned this repository (repo), placed it somewhere in your XAMPP htdocs folder and opened it up in **Visual Studio Code**.
