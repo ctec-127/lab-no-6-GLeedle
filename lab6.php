@@ -76,18 +76,18 @@
                                                                 ?>" name="originaltemp" size="14" maxlength="7" id="temp">
 
                 <select class="form-control" name="originalunit">
-                    <option value="--Select--" <?php if ($originalUnit == "--Select--") echo ' selected="selected"'; ?>>--Select Temperature Range--</option>
-                    <option value="celsius" <?php if ($originalUnit == "celsius") echo ' selected="celsius"'; ?>>Celsius</option>
-                    <option value="fahrenheit" <?php if ($originalUnit == "fahrenheit") echo ' selected="fahrenheit"'; ?>>Fahrenheit</option>
-                    <option value="kelvin" <?php if ($originalUnit == "kelvin") echo ' selected="kelvin"'; ?>>Kelvin</option>
+                    <option value="--Select--" <?php if (isset($originalUnit) && ($originalUnit == "--Select--")) echo ' selected="selected"'; ?>>--Select Temperature Range--</option>
+                    <option value="celsius" <?php if (isset($originalUnit) && ($originalUnit == "celsius")) echo ' selected="celsius"'; ?>>Celsius</option>
+                    <option value="fahrenheit" <?php if (isset($originalUnit) && ($originalUnit == "fahrenheit")) echo ' selected="fahrenheit"'; ?>>Fahrenheit</option>
+                    <option value="kelvin" <?php if (isset($originalUnit) && ($originalUnit == "kelvin")) echo ' selected="kelvin"'; ?>>Kelvin</option>
                 </select>
             </div>
             <label for="conversiontemp">Temperature to:</label>
             <select class="form-control" name="conversionunit" id="conversiontemp">
-                <option value="--Select--" <?php if ($conversionUnit == "--Select--") echo ' selected="selected"'; ?>>--Select New Temperature Range --</option>
-                <option value="celsius" <?php if ($conversionUnit == "celsius") echo ' selected="celsius"'; ?>>Celsius</option>
-                <option value="fahrenheit" <?php if ($conversionUnit == "fahrenheit") echo ' selected="fahrenheit"'; ?>>Fahrenheit</option>
-                <option value="kelvin" <?php if ($conversionUnit == "kelvin") echo ' selected="kelvin"'; ?>>Kelvin</option>
+                <option value="--Select--" <?php if (isset($conversionUnit) && ($conversionUnit == "--Select--")) echo ' selected="selected"'; ?>>--Select New Temperature Range --</option>
+                <option value="celsius" <?php if (isset($conversionUnit) && ($conversionUnit == "celsius")) echo ' selected="celsius"'; ?>>Celsius</option>
+                <option value="fahrenheit" <?php if (isset($conversionUnit) && ($conversionUnit == "fahrenheit")) echo ' selected="fahrenheit"'; ?>>Fahrenheit</option>
+                <option value="kelvin" <?php if (isset($conversionUnit) && ($conversionUnit == "kelvin")) echo ' selected="kelvin"'; ?>>Kelvin</option>
             </select>
             <div class="group">
                 <label for="convertedtemp">Converted Temperature</label>
